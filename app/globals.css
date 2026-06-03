@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #eef1f6;
+  color: #0f1b2d;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Comfortable, high-contrast scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #e2e7ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #b9c2d2;
+  border-radius: 999px;
+  border: 3px solid #e2e7ef;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #97a3b8;
+  background-clip: padding-box;
+}
+
+@layer components {
+  /* White executive card — clean, soft shadow, no heavy effects. */
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white shadow-card;
+  }
+
+  .card-hover {
+    @apply transition-shadow duration-200 hover:shadow-card-hover;
+  }
+
+  /* Section heading eyebrow — readable, not tiny. */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-wider text-brand-700;
+  }
+
+  .gold-rule {
+    height: 3px;
+    width: 48px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #b8860b, #ddb84a);
+  }
+}
+
+/* Recharts polish for light theme */
+.recharts-cartesian-axis-tick-value {
+  fill: #475569;
+  font-size: 13px;
+  font-weight: 500;
+}
+.recharts-text {
+  font-size: 13px;
+}
+.recharts-cartesian-grid line {
+  stroke: #e8ecf2;
+}
