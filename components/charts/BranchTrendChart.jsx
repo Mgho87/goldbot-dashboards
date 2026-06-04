@@ -25,7 +25,7 @@ export default function BranchTrendChart({ data, color = "#1f4bb0", id }) {
           </linearGradient>
         </defs>
         <CartesianGrid {...gridProps} />
-        <XAxis dataKey="label" {...axisProps} tick={{ fill: "#64748b", fontSize: 12 }} />
+        <XAxis dataKey="label" {...axisProps} tick={{ fill: "#64748b", fontSize: 11 }} interval="preserveStartEnd" minTickGap={20} />
         <YAxis {...axisProps} width={40} tick={{ fill: "#64748b", fontSize: 12 }} tickFormatter={compact} />
         <Tooltip content={<ChartTooltip />} />
         <Area

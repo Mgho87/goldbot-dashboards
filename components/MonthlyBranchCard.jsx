@@ -49,9 +49,9 @@ export default function MonthlyBranchCard({ data, isTop, delay = 0 }) {
 
       <div className="px-3 pb-2 pt-4">
         <p className="px-2 text-xs font-semibold uppercase tracking-wide text-slate-500">
-          Monthly Revenue Trend
+          Daily Revenue Trend · last 14 days
         </p>
-        <BranchTrendChart data={data.trend} color={color} id={data.branch} />
+        <BranchTrendChart data={data.dailyTrend} color={color} id={data.branch} />
       </div>
     </motion.div>
   );

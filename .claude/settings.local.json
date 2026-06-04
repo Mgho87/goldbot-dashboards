@@ -11,7 +11,16 @@
       "WebFetch(domain:www.dlt.ae)",
       "WebFetch(domain:www.dubaitranslationoffice.com)",
       "mcp__Claude_in_Chrome__list_connected_browsers",
-      "mcp__Claude_in_Chrome__tabs_context_mcp"
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(pip --version)",
+      "PowerShell($cmds = 'python','py','python3'; foreach \\($c in $cmds\\) { $g = Get-Command $c -ErrorAction SilentlyContinue; if \\($g\\) { \"$c -> $\\($g.Source\\)\" } }; \"---\"; \\(Get-Command python -ErrorAction SilentlyContinue | Select-Object -First 1\\))",
+      "PowerShell(winget install --id Python.Python.3.12 -e --source winget --accept-package-agreements --accept-source-agreements --silent)",
+      "PowerShell(winget search ngrok --accept-source-agreements)",
+      "PowerShell($p = \"$env:LOCALAPPDATA\\\\Microsoft\\\\WinGet\\\\Links\\\\ngrok.exe\"; if \\(Test-Path $p\\) { Write-Output \"FOUND: $p\"; & $p version } else { Write-Output \"Not at Links, searching...\"; Get-ChildItem \"$env:LOCALAPPDATA\\\\Microsoft\\\\WinGet\\\\Packages\" -Recurse -Filter ngrok.exe -ErrorAction SilentlyContinue | Select-Object -First 1 -ExpandProperty FullName })",
+      "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\Microsoft\\\\WinGet\" -Recurse -Filter ngrok.exe -ErrorAction SilentlyContinue | Select-Object FullName; Write-Output \"---LINKS---\"; Get-ChildItem \"$env:LOCALAPPDATA\\\\Microsoft\\\\WinGet\\\\Links\" -ErrorAction SilentlyContinue | Select-Object Name; Write-Output \"---WHERE---\"; cmd /c \"where ngrok 2>nul\")",
+      "PowerShell(Start-Sleep -Seconds 3; \\(Invoke-RestMethod -Uri \"http://127.0.0.1:4040/api/tunnels\"\\).tunnels | Select-Object public_url, proto)",
+      "PowerShell(Start-Sleep -Seconds 4; \\(Invoke-RestMethod -Uri \"http://127.0.0.1:4040/api/tunnels\"\\).tunnels | Where-Object { $_.proto -eq 'https' } | Select-Object -ExpandProperty public_url)",
+      "PowerShell($conns = Get-NetTCPConnection -LocalPort 5000 -State Listen -ErrorAction SilentlyContinue; foreach \\($c in $conns\\) { Stop-Process -Id $c.OwningProcess -Force -ErrorAction SilentlyContinue }; Start-Sleep -Seconds 1; Set-Location C:\\\\Users\\\\HP\\\\Desktop\\\\GoldBot; .\\\\.venv\\\\Scripts\\\\python.exe -m py_compile server\\\\app.py server\\\\store.py server\\\\executor.py; if \\($?\\) { Write-Output \"SYNTAX OK\" })"
     ]
   }
 }
