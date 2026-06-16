@@ -272,7 +272,7 @@ export default function Dashboard() {
 
         <footer className="mt-10 border-t border-slate-200 pt-6 text-center">
           <p className="text-sm font-semibold text-slate-600">
-            Diamond Legal Translation · Executive Control Center
+            GoldBot Dashboards · Executive Control Center
           </p>
           <p className="mt-1 text-[13px] text-slate-400">
             Auto-refreshing every 60 seconds · {payload?.mode === "live" ? "Live Google Sheets" : "Demo data"}

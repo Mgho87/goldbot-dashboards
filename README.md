@@ -1,7 +1,7 @@
-# 💎 Diamond Legal Translation — Executive Control Center
+# 📊 GoldBot Dashboards — Executive Control Center
 
-A premium, cloud-based **operational & financial dashboard** for Diamond Legal
-Translation, with live data from Google Sheets across three branches:
+A premium, cloud-based **operational & financial dashboard** for GoldBot
+Dashboards, with live data from Google Sheets across three branches:
 **DMCC · SZ · Deira**.
 
 Ultra-modern dark UI · Navy + Black + Gold · Glassmorphism · Smooth animations ·

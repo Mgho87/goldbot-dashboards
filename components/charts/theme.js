@@ -1,5 +1,5 @@
 // Clear, readable chart palette for the light executive theme.
-// Diamond blue + rich gold lead; strong (not pale) support colours.
+// Brand blue + rich gold lead; strong (not pale) support colours.
 
 export const PALETTE = {
   blue: "#1f4bb0",

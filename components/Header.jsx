@@ -3,8 +3,8 @@
 import { RefreshCw, Radio, FlaskConical } from "lucide-react";
 import { fmtDate, fmtTime, cn } from "@/lib/format";
 
-// Brilliant-cut diamond mark in brand gold/blue.
-function DiamondMark({ size = 30 }) {
+// Brand mark in brand gold/blue.
+function BrandMark({ size = 30 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none">
       <defs>
@@ -33,11 +33,11 @@ export default function Header({ mode, fetchedAt, onRefresh, refreshing }) {
       <div className="mx-auto flex max-w-[1500px] items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <div className="flex items-center gap-3.5">
           <span className="grid h-12 w-12 place-items-center rounded-2xl bg-brand-900 shadow-sm">
-            <DiamondMark size={28} />
+            <BrandMark size={28} />
           </span>
           <div>
             <h1 className="font-display text-lg font-extrabold leading-tight tracking-tight text-brand-900 sm:text-xl">
-              Diamond <span className="text-gold-600">Legal Translation</span>
+              GoldBot <span className="text-gold-600">Dashboards</span>
             </h1>
             <p className="text-[13px] font-medium italic text-gold-600">
               Executive Control Center

@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Deep Diamond blue — primary brand colour.
+        // Deep brand blue — primary brand colour.
         brand: {
           50: "#eef4ff",
           100: "#d9e6ff",

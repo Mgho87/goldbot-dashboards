@@ -1,8 +1,8 @@
 {
-  "name": "diamond-legal-dashboard",
+  "name": "goldbot-dashboards",
   "version": "1.0.0",
   "private": true,
-  "description": "Premium executive control center for Diamond Legal Translation — live Google Sheets analytics.",
+  "description": "Premium executive control center for GoldBot Dashboards — live Google Sheets analytics.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

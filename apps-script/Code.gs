@@ -1,5 +1,5 @@
 /**
- * Diamond Legal Translation — Dashboard data API (Google Apps Script Web App)
+ * GoldBot Dashboards — Dashboard data API (Google Apps Script Web App)
  *
  * SETUP
  * 1. Open your Google Sheet → Extensions → Apps Script.

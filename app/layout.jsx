@@ -15,9 +15,9 @@ const sora = Sora({
 });
 
 export const metadata = {
-  title: "Diamond Legal Translation — Executive Control Center",
+  title: "GoldBot Dashboards — Executive Control Center",
   description:
-    "Premium live operational & financial dashboard for Diamond Legal Translation. DMCC · SZ · Deira.",
+    "Premium live operational & financial dashboard for GoldBot Dashboards. DMCC · SZ · Deira.",
 };
 
 export const viewport = {
